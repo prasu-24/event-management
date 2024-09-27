@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Clean white background */
+    color: #333333; /* Dark text for readability */
+}
+
+header {
+    background-color: #000000; /* Black header */
+    color: white;
+    padding: 15px 0; /* Increased padding for better appearance */
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Thin border for sections */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside sections */
+    background-color: #f7f7f7; /* Light grey background for sections */
+}
+
+h2 {
+    color: #000000; /* Black headings */
+    border-bottom: 1px solid #000000; /* Thin border under headings */
+    padding-bottom: 10px;
+}
+
+#event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between event cards */
+}
+
+.event-card {
+    background-color: #ffffff; /* White background for cards */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.event-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #cccccc; /* Thin grey border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="submit"] {
+    background-color: #000000; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Animation on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #000000; /* Darker green on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px; /* Smaller padding for footer */
+    background-color: #000000; /* Black footer */
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

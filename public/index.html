@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Event Management Application</title>
+</head>
+<body>
+    <header>
+        <h1>Event Management Application</h1>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#create-event">Create Event</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="events">
+            <h2>Events</h2>
+            <ul id="event-list"></ul>
+        </section>
+        <section id="create-event">
+            <h2>Create Event</h2>
+            <form id="create-event-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="description" placeholder="Description" required></textarea>
+                <input type="date" id="date" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <input type="number" id="capacity" placeholder="Capacity" required>
+                <input type="submit" value="Create Event">
+            </form>
+            <div id="alert" style="display: none;"></div> <!-- Alert message container -->
+        </section>
+        <section id="register">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="submit" value="Register">
+            </form>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Event Management Application</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
